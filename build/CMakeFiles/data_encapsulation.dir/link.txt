@@ -1,0 +1,1 @@
+/usr/bin/gcc  -g   CMakeFiles/data_encapsulation.dir/main_data_encapsulation.c.o CMakeFiles/data_encapsulation.dir/src/DataEncapsulation/xplan-factory.c.o CMakeFiles/data_encapsulation.dir/src/DataEncapsulation/xplan-shoe-factory.c.o  -o data_encapsulation -rdynamic -lgobject-2.0 -lglib-2.0 

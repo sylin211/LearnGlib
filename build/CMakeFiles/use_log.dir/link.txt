@@ -1,0 +1,1 @@
+/usr/bin/gcc  -g   CMakeFiles/use_log.dir/main-use-log.c.o  -o use_log -rdynamic -lglib-2.0 

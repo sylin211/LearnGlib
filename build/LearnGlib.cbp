@@ -17,16 +17,6 @@
             <DistClean command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
-      <Target title="rebuild_cache">
-         <Option working_dir="/home/sylin/Code/LearnGlib/build" />
-         <Option type="4" />
-         <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 rebuild_cache" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 clean" />
-         </MakeCommands>
-      </Target>
       <Target title="edit_cache">
          <Option working_dir="/home/sylin/Code/LearnGlib/build" />
          <Option type="4" />
@@ -37,13 +27,14 @@
             <DistClean command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
-      <Target title="main_use_log">
-         <Option output="/home/sylin/Code/LearnGlib/build/main_use_log" prefix_auto="0" extension_auto="0" />
+      <Target title="use_class">
+         <Option output="/home/sylin/Code/LearnGlib/build/use_class" prefix_auto="0" extension_auto="0" />
          <Option working_dir="/home/sylin/Code/LearnGlib/build" />
          <Option object_output="./" />
          <Option type="1" />
          <Option compiler="gcc" />
          <Compiler>
+            <Add directory="/home/sylin/Code/LearnGlib/src" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/5" />
             <Add directory="/usr/include/c++/5/backward" />
@@ -56,19 +47,20 @@
             <Add directory="/usr/local/include" />
          </Compiler>
          <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 main_use_log" />
+            <Build command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 use_class" />
             <CompileFile command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
             <Clean command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 clean" />
             <DistClean command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
-      <Target title="main_use_log/fast">
-         <Option output="/home/sylin/Code/LearnGlib/build/main_use_log" prefix_auto="0" extension_auto="0" />
+      <Target title="use_class/fast">
+         <Option output="/home/sylin/Code/LearnGlib/build/use_class" prefix_auto="0" extension_auto="0" />
          <Option working_dir="/home/sylin/Code/LearnGlib/build" />
          <Option object_output="./" />
          <Option type="1" />
          <Option compiler="gcc" />
          <Compiler>
+            <Add directory="/home/sylin/Code/LearnGlib/src" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/5" />
             <Add directory="/usr/include/c++/5/backward" />
@@ -81,46 +73,30 @@
             <Add directory="/usr/local/include" />
          </Compiler>
          <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 main_use_log/fast" />
+            <Build command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 use_class/fast" />
             <CompileFile command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
             <Clean command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 clean" />
             <DistClean command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
-      <Target title="main_data_encapsulation">
-         <Option output="/home/sylin/Code/LearnGlib/build/main_data_encapsulation" prefix_auto="0" extension_auto="0" />
+      <Target title="rebuild_cache">
          <Option working_dir="/home/sylin/Code/LearnGlib/build" />
-         <Option object_output="./" />
-         <Option type="1" />
-         <Option compiler="gcc" />
-         <Compiler>
-            <Add directory="/home/sylin/Code/LearnGlib/src/DataEncapsulation" />
-            <Add directory="/usr/include" />
-            <Add directory="/usr/include/c++/5" />
-            <Add directory="/usr/include/c++/5/backward" />
-            <Add directory="/usr/include/glib-2.0" />
-            <Add directory="/usr/include/x86_64-linux-gnu" />
-            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
-            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
-            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
-            <Add directory="/usr/lib/x86_64-linux-gnu/glib-2.0/include" />
-            <Add directory="/usr/local/include" />
-         </Compiler>
+         <Option type="4" />
          <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 main_data_encapsulation" />
+            <Build command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 rebuild_cache" />
             <CompileFile command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
             <Clean command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 clean" />
             <DistClean command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
-      <Target title="main_data_encapsulation/fast">
-         <Option output="/home/sylin/Code/LearnGlib/build/main_data_encapsulation" prefix_auto="0" extension_auto="0" />
+      <Target title="use_interface">
+         <Option output="/home/sylin/Code/LearnGlib/build/use_interface" prefix_auto="0" extension_auto="0" />
          <Option working_dir="/home/sylin/Code/LearnGlib/build" />
          <Option object_output="./" />
          <Option type="1" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/home/sylin/Code/LearnGlib/src/DataEncapsulation" />
+            <Add directory="/home/sylin/Code/LearnGlib/src" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/5" />
             <Add directory="/usr/include/c++/5/backward" />
@@ -133,24 +109,123 @@
             <Add directory="/usr/local/include" />
          </Compiler>
          <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 main_data_encapsulation/fast" />
+            <Build command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 use_interface" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="use_interface/fast">
+         <Option output="/home/sylin/Code/LearnGlib/build/use_interface" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/sylin/Code/LearnGlib/build" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/sylin/Code/LearnGlib/src" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/glib-2.0" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/lib/x86_64-linux-gnu/glib-2.0/include" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 use_interface/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="use_log">
+         <Option output="/home/sylin/Code/LearnGlib/build/use_log" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/sylin/Code/LearnGlib/build" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/sylin/Code/LearnGlib/src" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/glib-2.0" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/lib/x86_64-linux-gnu/glib-2.0/include" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 use_log" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="use_log/fast">
+         <Option output="/home/sylin/Code/LearnGlib/build/use_log" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/sylin/Code/LearnGlib/build" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/sylin/Code/LearnGlib/src" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/glib-2.0" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/lib/x86_64-linux-gnu/glib-2.0/include" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 use_log/fast" />
             <CompileFile command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
             <Clean command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 clean" />
             <DistClean command="/usr/bin/make -f &quot;/home/sylin/Code/LearnGlib/build/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
       </Build>
-      <Unit filename="/home/sylin/Code/LearnGlib/main_data_encapsulation.c">
-         <Option target="main_data_encapsulation"/>
+      <Unit filename="/home/sylin/Code/LearnGlib/main-use-class.c">
+         <Option target="use_class"/>
       </Unit>
-      <Unit filename="/home/sylin/Code/LearnGlib/main_use_log.c">
-         <Option target="main_use_log"/>
+      <Unit filename="/home/sylin/Code/LearnGlib/main-use-interface.c">
+         <Option target="use_interface"/>
       </Unit>
-      <Unit filename="/home/sylin/Code/LearnGlib/src/DataEncapsulation/xplan-factory.c">
-         <Option target="main_data_encapsulation"/>
+      <Unit filename="/home/sylin/Code/LearnGlib/main-use-log.c">
+         <Option target="use_log"/>
       </Unit>
-      <Unit filename="/home/sylin/Code/LearnGlib/src/DataEncapsulation/xplan-factory.h">
-         <Option target="main_data_encapsulation"/>
+      <Unit filename="/home/sylin/Code/LearnGlib/src/UseClass/xplan-factory.c">
+         <Option target="use_class"/>
+      </Unit>
+      <Unit filename="/home/sylin/Code/LearnGlib/src/UseClass/xplan-factory.h">
+         <Option target="use_class"/>
+      </Unit>
+      <Unit filename="/home/sylin/Code/LearnGlib/src/UseClass/xplan-shoe-factory.c">
+         <Option target="use_class"/>
+      </Unit>
+      <Unit filename="/home/sylin/Code/LearnGlib/src/UseClass/xplan-shoe-factory.h">
+         <Option target="use_class"/>
+      </Unit>
+      <Unit filename="/home/sylin/Code/LearnGlib/src/UseInterface/dev-udisk.c">
+         <Option target="use_interface"/>
+      </Unit>
+      <Unit filename="/home/sylin/Code/LearnGlib/src/UseInterface/dev-udisk.h">
+         <Option target="use_interface"/>
+      </Unit>
+      <Unit filename="/home/sylin/Code/LearnGlib/src/UseInterface/dev-usb.c">
+         <Option target="use_interface"/>
+      </Unit>
+      <Unit filename="/home/sylin/Code/LearnGlib/src/UseInterface/dev-usb.h">
+         <Option target="use_interface"/>
       </Unit>
       <Unit filename="/home/sylin/Code/LearnGlib/CMakeLists.txt">
           <Option virtualFolder="CMake Files\" />

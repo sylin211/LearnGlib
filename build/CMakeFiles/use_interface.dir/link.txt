@@ -1,0 +1,1 @@
+/usr/bin/gcc  -g   CMakeFiles/use_interface.dir/main-use-interface.c.o CMakeFiles/use_interface.dir/src/UseInterface/dev-usb.c.o CMakeFiles/use_interface.dir/src/UseInterface/dev-udisk.c.o  -o use_interface -rdynamic -lgobject-2.0 -lglib-2.0 

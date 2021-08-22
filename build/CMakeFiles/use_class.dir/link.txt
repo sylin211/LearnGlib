@@ -1,0 +1,1 @@
+/usr/bin/gcc  -g   CMakeFiles/use_class.dir/main-use-class.c.o CMakeFiles/use_class.dir/src/UseClass/xplan-factory.c.o CMakeFiles/use_class.dir/src/UseClass/xplan-shoe-factory.c.o  -o use_class -rdynamic -lgobject-2.0 -lglib-2.0 

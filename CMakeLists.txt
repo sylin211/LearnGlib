@@ -7,13 +7,20 @@ PKG_CHECK_MODULES (GLIB2 REQUIRED glib-2.0)
 PKG_CHECK_MODULES (GOBJECT2 REQUIRED gobject-2.0)
 
 include_directories(
+    ${PROJECT_SOURCE_DIR}/src
     ${GLIB2_INCLUDE_DIRS}
     ${GOBJECT2_INCLUDE_DIRS}
     )
 
-add_executable(main_data_encapsulation main_data_encapsulation.c src/DataEncapsulation/xplan-factory.c)
-target_include_directories(main_data_encapsulation PUBLIC src/DataEncapsulation)
-target_link_libraries(main_data_encapsulation ${GOBJECT2_LIBRARIES})
+add_executable(use_class main-use-class.c
+    src/UseClass/xplan-factory.c
+    src/UseClass/xplan-shoe-factory.c)
+target_link_libraries(use_class ${GOBJECT2_LIBRARIES})
 
-add_executable(main_use_log main_use_log.c)
-target_link_libraries(main_use_log ${GLIB2_LIBRARIES})
+add_executable(use_interface main-use-interface.c
+    src/UseInterface/dev-usb.c
+    src/UseInterface/dev-udisk.c)
+target_link_libraries(use_interface ${GOBJECT2_LIBRARIES})
+
+add_executable(use_log main-use-log.c)
+target_link_libraries(use_log ${GLIB2_LIBRARIES})

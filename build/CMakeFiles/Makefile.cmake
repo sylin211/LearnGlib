@@ -48,6 +48,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/main_use_log.dir/DependInfo.cmake"
-  "CMakeFiles/main_data_encapsulation.dir/DependInfo.cmake"
+  "CMakeFiles/use_class.dir/DependInfo.cmake"
+  "CMakeFiles/use_interface.dir/DependInfo.cmake"
+  "CMakeFiles/use_log.dir/DependInfo.cmake"
   )

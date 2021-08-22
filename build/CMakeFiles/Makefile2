@@ -60,76 +60,113 @@ CMAKE_SOURCE_DIR = /home/sylin/Code/LearnGlib
 CMAKE_BINARY_DIR = /home/sylin/Code/LearnGlib/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/main_use_log.dir
+# Target rules for target CMakeFiles/use_class.dir
 
 # All Build rule for target.
-CMakeFiles/main_use_log.dir/all:
-	$(MAKE) -f CMakeFiles/main_use_log.dir/build.make CMakeFiles/main_use_log.dir/depend
-	$(MAKE) -f CMakeFiles/main_use_log.dir/build.make CMakeFiles/main_use_log.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sylin/Code/LearnGlib/build/CMakeFiles --progress-num=4,5 "Built target main_use_log"
-.PHONY : CMakeFiles/main_use_log.dir/all
+CMakeFiles/use_class.dir/all:
+	$(MAKE) -f CMakeFiles/use_class.dir/build.make CMakeFiles/use_class.dir/depend
+	$(MAKE) -f CMakeFiles/use_class.dir/build.make CMakeFiles/use_class.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sylin/Code/LearnGlib/build/CMakeFiles --progress-num=1,2,3,4 "Built target use_class"
+.PHONY : CMakeFiles/use_class.dir/all
 
 # Include target in all.
-all: CMakeFiles/main_use_log.dir/all
+all: CMakeFiles/use_class.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/main_use_log.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sylin/Code/LearnGlib/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main_use_log.dir/all
+CMakeFiles/use_class.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sylin/Code/LearnGlib/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/use_class.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sylin/Code/LearnGlib/build/CMakeFiles 0
-.PHONY : CMakeFiles/main_use_log.dir/rule
+.PHONY : CMakeFiles/use_class.dir/rule
 
 # Convenience name for target.
-main_use_log: CMakeFiles/main_use_log.dir/rule
+use_class: CMakeFiles/use_class.dir/rule
 
-.PHONY : main_use_log
-
-# clean rule for target.
-CMakeFiles/main_use_log.dir/clean:
-	$(MAKE) -f CMakeFiles/main_use_log.dir/build.make CMakeFiles/main_use_log.dir/clean
-.PHONY : CMakeFiles/main_use_log.dir/clean
+.PHONY : use_class
 
 # clean rule for target.
-clean: CMakeFiles/main_use_log.dir/clean
+CMakeFiles/use_class.dir/clean:
+	$(MAKE) -f CMakeFiles/use_class.dir/build.make CMakeFiles/use_class.dir/clean
+.PHONY : CMakeFiles/use_class.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/use_class.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/main_data_encapsulation.dir
+# Target rules for target CMakeFiles/use_interface.dir
 
 # All Build rule for target.
-CMakeFiles/main_data_encapsulation.dir/all:
-	$(MAKE) -f CMakeFiles/main_data_encapsulation.dir/build.make CMakeFiles/main_data_encapsulation.dir/depend
-	$(MAKE) -f CMakeFiles/main_data_encapsulation.dir/build.make CMakeFiles/main_data_encapsulation.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sylin/Code/LearnGlib/build/CMakeFiles --progress-num=1,2,3 "Built target main_data_encapsulation"
-.PHONY : CMakeFiles/main_data_encapsulation.dir/all
+CMakeFiles/use_interface.dir/all:
+	$(MAKE) -f CMakeFiles/use_interface.dir/build.make CMakeFiles/use_interface.dir/depend
+	$(MAKE) -f CMakeFiles/use_interface.dir/build.make CMakeFiles/use_interface.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sylin/Code/LearnGlib/build/CMakeFiles --progress-num=5,6,7,8 "Built target use_interface"
+.PHONY : CMakeFiles/use_interface.dir/all
 
 # Include target in all.
-all: CMakeFiles/main_data_encapsulation.dir/all
+all: CMakeFiles/use_interface.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/main_data_encapsulation.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sylin/Code/LearnGlib/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main_data_encapsulation.dir/all
+CMakeFiles/use_interface.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sylin/Code/LearnGlib/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/use_interface.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sylin/Code/LearnGlib/build/CMakeFiles 0
-.PHONY : CMakeFiles/main_data_encapsulation.dir/rule
+.PHONY : CMakeFiles/use_interface.dir/rule
 
 # Convenience name for target.
-main_data_encapsulation: CMakeFiles/main_data_encapsulation.dir/rule
+use_interface: CMakeFiles/use_interface.dir/rule
 
-.PHONY : main_data_encapsulation
-
-# clean rule for target.
-CMakeFiles/main_data_encapsulation.dir/clean:
-	$(MAKE) -f CMakeFiles/main_data_encapsulation.dir/build.make CMakeFiles/main_data_encapsulation.dir/clean
-.PHONY : CMakeFiles/main_data_encapsulation.dir/clean
+.PHONY : use_interface
 
 # clean rule for target.
-clean: CMakeFiles/main_data_encapsulation.dir/clean
+CMakeFiles/use_interface.dir/clean:
+	$(MAKE) -f CMakeFiles/use_interface.dir/build.make CMakeFiles/use_interface.dir/clean
+.PHONY : CMakeFiles/use_interface.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/use_interface.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/use_log.dir
+
+# All Build rule for target.
+CMakeFiles/use_log.dir/all:
+	$(MAKE) -f CMakeFiles/use_log.dir/build.make CMakeFiles/use_log.dir/depend
+	$(MAKE) -f CMakeFiles/use_log.dir/build.make CMakeFiles/use_log.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sylin/Code/LearnGlib/build/CMakeFiles --progress-num=9,10 "Built target use_log"
+.PHONY : CMakeFiles/use_log.dir/all
+
+# Include target in all.
+all: CMakeFiles/use_log.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/use_log.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sylin/Code/LearnGlib/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/use_log.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sylin/Code/LearnGlib/build/CMakeFiles 0
+.PHONY : CMakeFiles/use_log.dir/rule
+
+# Convenience name for target.
+use_log: CMakeFiles/use_log.dir/rule
+
+.PHONY : use_log
+
+# clean rule for target.
+CMakeFiles/use_log.dir/clean:
+	$(MAKE) -f CMakeFiles/use_log.dir/build.make CMakeFiles/use_log.dir/clean
+.PHONY : CMakeFiles/use_log.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/use_log.dir/clean
 
 .PHONY : clean
 

@@ -25,6 +25,8 @@ struct _XplanFactoryClass{             // Class struct
     GObjectClass ParentClass;
 };
 
+void xplan_factory_printf_info();
+
 // Declare a t_n_get_type() like function which is automatically generated
 // by glib after using macro of G_DEFINE_TYPE in source file.
 GType xplan_factory_get_type (void);

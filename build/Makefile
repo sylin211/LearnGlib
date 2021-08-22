@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/sylin/Code/LearnGlib/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,111 +111,232 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main_use_log
+# Target rules for targets named use_class
 
 # Build rule for target.
-main_use_log: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main_use_log
-.PHONY : main_use_log
+use_class: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 use_class
+.PHONY : use_class
 
 # fast build rule for target.
-main_use_log/fast:
-	$(MAKE) -f CMakeFiles/main_use_log.dir/build.make CMakeFiles/main_use_log.dir/build
-.PHONY : main_use_log/fast
+use_class/fast:
+	$(MAKE) -f CMakeFiles/use_class.dir/build.make CMakeFiles/use_class.dir/build
+.PHONY : use_class/fast
 
 #=============================================================================
-# Target rules for targets named main_data_encapsulation
+# Target rules for targets named use_interface
 
 # Build rule for target.
-main_data_encapsulation: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main_data_encapsulation
-.PHONY : main_data_encapsulation
+use_interface: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 use_interface
+.PHONY : use_interface
 
 # fast build rule for target.
-main_data_encapsulation/fast:
-	$(MAKE) -f CMakeFiles/main_data_encapsulation.dir/build.make CMakeFiles/main_data_encapsulation.dir/build
-.PHONY : main_data_encapsulation/fast
+use_interface/fast:
+	$(MAKE) -f CMakeFiles/use_interface.dir/build.make CMakeFiles/use_interface.dir/build
+.PHONY : use_interface/fast
 
-main_data_encapsulation.o: main_data_encapsulation.c.o
+#=============================================================================
+# Target rules for targets named use_log
 
-.PHONY : main_data_encapsulation.o
+# Build rule for target.
+use_log: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 use_log
+.PHONY : use_log
 
-# target to build an object file
-main_data_encapsulation.c.o:
-	$(MAKE) -f CMakeFiles/main_data_encapsulation.dir/build.make CMakeFiles/main_data_encapsulation.dir/main_data_encapsulation.c.o
-.PHONY : main_data_encapsulation.c.o
+# fast build rule for target.
+use_log/fast:
+	$(MAKE) -f CMakeFiles/use_log.dir/build.make CMakeFiles/use_log.dir/build
+.PHONY : use_log/fast
 
-main_data_encapsulation.i: main_data_encapsulation.c.i
+main-use-class.o: main-use-class.c.o
 
-.PHONY : main_data_encapsulation.i
-
-# target to preprocess a source file
-main_data_encapsulation.c.i:
-	$(MAKE) -f CMakeFiles/main_data_encapsulation.dir/build.make CMakeFiles/main_data_encapsulation.dir/main_data_encapsulation.c.i
-.PHONY : main_data_encapsulation.c.i
-
-main_data_encapsulation.s: main_data_encapsulation.c.s
-
-.PHONY : main_data_encapsulation.s
-
-# target to generate assembly for a file
-main_data_encapsulation.c.s:
-	$(MAKE) -f CMakeFiles/main_data_encapsulation.dir/build.make CMakeFiles/main_data_encapsulation.dir/main_data_encapsulation.c.s
-.PHONY : main_data_encapsulation.c.s
-
-main_use_log.o: main_use_log.c.o
-
-.PHONY : main_use_log.o
+.PHONY : main-use-class.o
 
 # target to build an object file
-main_use_log.c.o:
-	$(MAKE) -f CMakeFiles/main_use_log.dir/build.make CMakeFiles/main_use_log.dir/main_use_log.c.o
-.PHONY : main_use_log.c.o
+main-use-class.c.o:
+	$(MAKE) -f CMakeFiles/use_class.dir/build.make CMakeFiles/use_class.dir/main-use-class.c.o
+.PHONY : main-use-class.c.o
 
-main_use_log.i: main_use_log.c.i
+main-use-class.i: main-use-class.c.i
 
-.PHONY : main_use_log.i
+.PHONY : main-use-class.i
 
 # target to preprocess a source file
-main_use_log.c.i:
-	$(MAKE) -f CMakeFiles/main_use_log.dir/build.make CMakeFiles/main_use_log.dir/main_use_log.c.i
-.PHONY : main_use_log.c.i
+main-use-class.c.i:
+	$(MAKE) -f CMakeFiles/use_class.dir/build.make CMakeFiles/use_class.dir/main-use-class.c.i
+.PHONY : main-use-class.c.i
 
-main_use_log.s: main_use_log.c.s
+main-use-class.s: main-use-class.c.s
 
-.PHONY : main_use_log.s
+.PHONY : main-use-class.s
 
 # target to generate assembly for a file
-main_use_log.c.s:
-	$(MAKE) -f CMakeFiles/main_use_log.dir/build.make CMakeFiles/main_use_log.dir/main_use_log.c.s
-.PHONY : main_use_log.c.s
+main-use-class.c.s:
+	$(MAKE) -f CMakeFiles/use_class.dir/build.make CMakeFiles/use_class.dir/main-use-class.c.s
+.PHONY : main-use-class.c.s
 
-src/DataEncapsulation/xplan-factory.o: src/DataEncapsulation/xplan-factory.c.o
+main-use-interface.o: main-use-interface.c.o
 
-.PHONY : src/DataEncapsulation/xplan-factory.o
+.PHONY : main-use-interface.o
 
 # target to build an object file
-src/DataEncapsulation/xplan-factory.c.o:
-	$(MAKE) -f CMakeFiles/main_data_encapsulation.dir/build.make CMakeFiles/main_data_encapsulation.dir/src/DataEncapsulation/xplan-factory.c.o
-.PHONY : src/DataEncapsulation/xplan-factory.c.o
+main-use-interface.c.o:
+	$(MAKE) -f CMakeFiles/use_interface.dir/build.make CMakeFiles/use_interface.dir/main-use-interface.c.o
+.PHONY : main-use-interface.c.o
 
-src/DataEncapsulation/xplan-factory.i: src/DataEncapsulation/xplan-factory.c.i
+main-use-interface.i: main-use-interface.c.i
 
-.PHONY : src/DataEncapsulation/xplan-factory.i
+.PHONY : main-use-interface.i
 
 # target to preprocess a source file
-src/DataEncapsulation/xplan-factory.c.i:
-	$(MAKE) -f CMakeFiles/main_data_encapsulation.dir/build.make CMakeFiles/main_data_encapsulation.dir/src/DataEncapsulation/xplan-factory.c.i
-.PHONY : src/DataEncapsulation/xplan-factory.c.i
+main-use-interface.c.i:
+	$(MAKE) -f CMakeFiles/use_interface.dir/build.make CMakeFiles/use_interface.dir/main-use-interface.c.i
+.PHONY : main-use-interface.c.i
 
-src/DataEncapsulation/xplan-factory.s: src/DataEncapsulation/xplan-factory.c.s
+main-use-interface.s: main-use-interface.c.s
 
-.PHONY : src/DataEncapsulation/xplan-factory.s
+.PHONY : main-use-interface.s
 
 # target to generate assembly for a file
-src/DataEncapsulation/xplan-factory.c.s:
-	$(MAKE) -f CMakeFiles/main_data_encapsulation.dir/build.make CMakeFiles/main_data_encapsulation.dir/src/DataEncapsulation/xplan-factory.c.s
-.PHONY : src/DataEncapsulation/xplan-factory.c.s
+main-use-interface.c.s:
+	$(MAKE) -f CMakeFiles/use_interface.dir/build.make CMakeFiles/use_interface.dir/main-use-interface.c.s
+.PHONY : main-use-interface.c.s
+
+main-use-log.o: main-use-log.c.o
+
+.PHONY : main-use-log.o
+
+# target to build an object file
+main-use-log.c.o:
+	$(MAKE) -f CMakeFiles/use_log.dir/build.make CMakeFiles/use_log.dir/main-use-log.c.o
+.PHONY : main-use-log.c.o
+
+main-use-log.i: main-use-log.c.i
+
+.PHONY : main-use-log.i
+
+# target to preprocess a source file
+main-use-log.c.i:
+	$(MAKE) -f CMakeFiles/use_log.dir/build.make CMakeFiles/use_log.dir/main-use-log.c.i
+.PHONY : main-use-log.c.i
+
+main-use-log.s: main-use-log.c.s
+
+.PHONY : main-use-log.s
+
+# target to generate assembly for a file
+main-use-log.c.s:
+	$(MAKE) -f CMakeFiles/use_log.dir/build.make CMakeFiles/use_log.dir/main-use-log.c.s
+.PHONY : main-use-log.c.s
+
+src/UseClass/xplan-factory.o: src/UseClass/xplan-factory.c.o
+
+.PHONY : src/UseClass/xplan-factory.o
+
+# target to build an object file
+src/UseClass/xplan-factory.c.o:
+	$(MAKE) -f CMakeFiles/use_class.dir/build.make CMakeFiles/use_class.dir/src/UseClass/xplan-factory.c.o
+.PHONY : src/UseClass/xplan-factory.c.o
+
+src/UseClass/xplan-factory.i: src/UseClass/xplan-factory.c.i
+
+.PHONY : src/UseClass/xplan-factory.i
+
+# target to preprocess a source file
+src/UseClass/xplan-factory.c.i:
+	$(MAKE) -f CMakeFiles/use_class.dir/build.make CMakeFiles/use_class.dir/src/UseClass/xplan-factory.c.i
+.PHONY : src/UseClass/xplan-factory.c.i
+
+src/UseClass/xplan-factory.s: src/UseClass/xplan-factory.c.s
+
+.PHONY : src/UseClass/xplan-factory.s
+
+# target to generate assembly for a file
+src/UseClass/xplan-factory.c.s:
+	$(MAKE) -f CMakeFiles/use_class.dir/build.make CMakeFiles/use_class.dir/src/UseClass/xplan-factory.c.s
+.PHONY : src/UseClass/xplan-factory.c.s
+
+src/UseClass/xplan-shoe-factory.o: src/UseClass/xplan-shoe-factory.c.o
+
+.PHONY : src/UseClass/xplan-shoe-factory.o
+
+# target to build an object file
+src/UseClass/xplan-shoe-factory.c.o:
+	$(MAKE) -f CMakeFiles/use_class.dir/build.make CMakeFiles/use_class.dir/src/UseClass/xplan-shoe-factory.c.o
+.PHONY : src/UseClass/xplan-shoe-factory.c.o
+
+src/UseClass/xplan-shoe-factory.i: src/UseClass/xplan-shoe-factory.c.i
+
+.PHONY : src/UseClass/xplan-shoe-factory.i
+
+# target to preprocess a source file
+src/UseClass/xplan-shoe-factory.c.i:
+	$(MAKE) -f CMakeFiles/use_class.dir/build.make CMakeFiles/use_class.dir/src/UseClass/xplan-shoe-factory.c.i
+.PHONY : src/UseClass/xplan-shoe-factory.c.i
+
+src/UseClass/xplan-shoe-factory.s: src/UseClass/xplan-shoe-factory.c.s
+
+.PHONY : src/UseClass/xplan-shoe-factory.s
+
+# target to generate assembly for a file
+src/UseClass/xplan-shoe-factory.c.s:
+	$(MAKE) -f CMakeFiles/use_class.dir/build.make CMakeFiles/use_class.dir/src/UseClass/xplan-shoe-factory.c.s
+.PHONY : src/UseClass/xplan-shoe-factory.c.s
+
+src/UseInterface/dev-udisk.o: src/UseInterface/dev-udisk.c.o
+
+.PHONY : src/UseInterface/dev-udisk.o
+
+# target to build an object file
+src/UseInterface/dev-udisk.c.o:
+	$(MAKE) -f CMakeFiles/use_interface.dir/build.make CMakeFiles/use_interface.dir/src/UseInterface/dev-udisk.c.o
+.PHONY : src/UseInterface/dev-udisk.c.o
+
+src/UseInterface/dev-udisk.i: src/UseInterface/dev-udisk.c.i
+
+.PHONY : src/UseInterface/dev-udisk.i
+
+# target to preprocess a source file
+src/UseInterface/dev-udisk.c.i:
+	$(MAKE) -f CMakeFiles/use_interface.dir/build.make CMakeFiles/use_interface.dir/src/UseInterface/dev-udisk.c.i
+.PHONY : src/UseInterface/dev-udisk.c.i
+
+src/UseInterface/dev-udisk.s: src/UseInterface/dev-udisk.c.s
+
+.PHONY : src/UseInterface/dev-udisk.s
+
+# target to generate assembly for a file
+src/UseInterface/dev-udisk.c.s:
+	$(MAKE) -f CMakeFiles/use_interface.dir/build.make CMakeFiles/use_interface.dir/src/UseInterface/dev-udisk.c.s
+.PHONY : src/UseInterface/dev-udisk.c.s
+
+src/UseInterface/dev-usb.o: src/UseInterface/dev-usb.c.o
+
+.PHONY : src/UseInterface/dev-usb.o
+
+# target to build an object file
+src/UseInterface/dev-usb.c.o:
+	$(MAKE) -f CMakeFiles/use_interface.dir/build.make CMakeFiles/use_interface.dir/src/UseInterface/dev-usb.c.o
+.PHONY : src/UseInterface/dev-usb.c.o
+
+src/UseInterface/dev-usb.i: src/UseInterface/dev-usb.c.i
+
+.PHONY : src/UseInterface/dev-usb.i
+
+# target to preprocess a source file
+src/UseInterface/dev-usb.c.i:
+	$(MAKE) -f CMakeFiles/use_interface.dir/build.make CMakeFiles/use_interface.dir/src/UseInterface/dev-usb.c.i
+.PHONY : src/UseInterface/dev-usb.c.i
+
+src/UseInterface/dev-usb.s: src/UseInterface/dev-usb.c.s
+
+.PHONY : src/UseInterface/dev-usb.s
+
+# target to generate assembly for a file
+src/UseInterface/dev-usb.c.s:
+	$(MAKE) -f CMakeFiles/use_interface.dir/build.make CMakeFiles/use_interface.dir/src/UseInterface/dev-usb.c.s
+.PHONY : src/UseInterface/dev-usb.c.s
 
 # Help Target
 help:
@@ -223,19 +344,32 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... main_use_log"
-	@echo "... main_data_encapsulation"
-	@echo "... main_data_encapsulation.o"
-	@echo "... main_data_encapsulation.i"
-	@echo "... main_data_encapsulation.s"
-	@echo "... main_use_log.o"
-	@echo "... main_use_log.i"
-	@echo "... main_use_log.s"
-	@echo "... src/DataEncapsulation/xplan-factory.o"
-	@echo "... src/DataEncapsulation/xplan-factory.i"
-	@echo "... src/DataEncapsulation/xplan-factory.s"
+	@echo "... use_class"
+	@echo "... rebuild_cache"
+	@echo "... use_interface"
+	@echo "... use_log"
+	@echo "... main-use-class.o"
+	@echo "... main-use-class.i"
+	@echo "... main-use-class.s"
+	@echo "... main-use-interface.o"
+	@echo "... main-use-interface.i"
+	@echo "... main-use-interface.s"
+	@echo "... main-use-log.o"
+	@echo "... main-use-log.i"
+	@echo "... main-use-log.s"
+	@echo "... src/UseClass/xplan-factory.o"
+	@echo "... src/UseClass/xplan-factory.i"
+	@echo "... src/UseClass/xplan-factory.s"
+	@echo "... src/UseClass/xplan-shoe-factory.o"
+	@echo "... src/UseClass/xplan-shoe-factory.i"
+	@echo "... src/UseClass/xplan-shoe-factory.s"
+	@echo "... src/UseInterface/dev-udisk.o"
+	@echo "... src/UseInterface/dev-udisk.i"
+	@echo "... src/UseInterface/dev-udisk.s"
+	@echo "... src/UseInterface/dev-usb.o"
+	@echo "... src/UseInterface/dev-usb.i"
+	@echo "... src/UseInterface/dev-usb.s"
 .PHONY : help
 
 
